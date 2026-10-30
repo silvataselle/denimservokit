@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+FROM alpine:3.18
+CMD ["echo", "ready"]
+targets:
+  default:
+    build: npm run build
